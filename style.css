@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 0.938rem;
 }
 
 main {
@@ -30,7 +30,7 @@ img {
 
 h1 {
     color:  hsl(234, 12%, 34%);
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 200;
     margin: 0;
     text-align: center;
@@ -44,7 +44,7 @@ h2 {
 p {
     color: hsl(229, 6%, 66%);
     line-height: 150%;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .container {
@@ -76,7 +76,7 @@ p {
 .icon {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .supervisor {
@@ -95,4 +95,67 @@ p {
     border-top: 4px solid hsl(212, 86%, 64%);
 }
 
+@media screen and (max-width: 368px) {
+    h1 {
+        font-size: 1.4rem;
+    }
 
+    h2 {
+        font-size: 1.063rem;
+    }
+
+    p {
+        font-size: .813rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-height: 100vh;
+    }
+
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .text {
+        margin: 5rem auto;
+        width: 45%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        grid-gap: 2rem;
+        margin: 0;
+    }
+
+    .supervisor {
+        grid-row: 1 / 3;
+    }
+
+    .calculator {
+        grid-column: 3 / 4;
+        grid-row: 3 / 1;
+    }
+
+    .karma {
+        grid-column: 2 / 3;
+        margin-bottom: 5rem;
+    }
+
+    .team-builder {
+        margin-bottom: 0;
+    }
+}
